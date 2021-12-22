@@ -5,7 +5,7 @@
         $contact = $_GET['ucon'];
         // echo $name." ".$a." ".$c;
         $con = mysqli_connect("localhost", "root", "", "db_connection_wtclass");
-        $query = "INSERT INTO tb_connection (name, address, contact) VALUES ('$name', '$address', '$contact')";
+        $query = "INSERT INTO tb_connection (name,address,contact) VALUES ('$name', '$address', '$contact')";
         $res =  mysqli_query($con, $query);
         if($res)
             echo "data entered successfully!";
