@@ -1,10 +1,10 @@
 <?php
     if(isset($_GET['update'])){
         // echo "success";
+        $id = $_GET['uid'];
         $name = $_GET['uname'];
         $address = $_GET['uadd'];
         $contact = $_GET['ucon'];
-        $id = $_GET['uid'];
         // echo " $id, $name, $address, $contact";
 
         $con = mysqli_connect("localhost", "root", "", "db_connection_wtclass");
